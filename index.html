@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Short URL</h1>
+    <div>
+      <form>
+        <div>
+          <p>Paste your original link</p>
+          <label>Input 1:</label>
+          <input type="url" id="og_url" placeholder="Put your link here">
+        </div>
+        <div>
+          <p>Create your own SHORT</p>
+          <label>Input 2:</label>
+          <input type="text" id="custom_url" placeholder="Enter the name what you want">
+        </div>
+        <input type="submit" id="sum-btn" onclick="shorten()" value = "Create" />
+    </form>
+    </div>
+    
+    <div id="short-container">
+      <div id="short-url"></div>
+      <!-- <button id="copy-btn" onclick="copy_url()">Copy</button> -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
